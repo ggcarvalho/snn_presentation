@@ -1,4 +1,4 @@
-Mathematical and Computational Aspects of SNNs
+On the mathematical and computational aspects of SNNs
 : This talk is heavily based on Rob Pike's Go at Google: Language Design in the Service of Software Engineering 2012 article
 : https://talks.golang.org/2012/splash.article
 : Name of the talk ispired by https://www.youtube.com/watch?v=mur2aRsRxZ0
@@ -13,7 +13,6 @@ Tags: snn, AI
 
 Gabriel G. Carvalho
 Ph.D Student at CIn - UFPE
-ggc5@cin.ufpe.br
 https://ggcarvalho.dev
 
 * Goal
