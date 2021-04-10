@@ -1,0 +1,56 @@
+Mathematical and computational aspects of SNNs
+: This talk is heavily based on Rob Pike's Go at Google: Language Design in the Service of Software Engineering 2012 article
+: https://talks.golang.org/2012/splash.article
+: Name of the talk ispired by https://www.youtube.com/watch?v=mur2aRsRxZ0
+: MUST READ UNTIL EOF
+: SHOULD: System Preferences → General → Show scroll bars: Always
+: SHOULD: Maximize notes window size
+: SHOULD: Check if notes are small enough to be read without scrolling
+: EOF
+SNN Group @ CIn-UFPE
+15:00 14 Apr 2021
+Tags: snn, ai
+
+Gabriel G. Carvalho
+Ph.D Student - CIn - UFPE
+ggc5@cin.ufpe.br
+https://ggcarvalho.dev
+
+* Goal
+
+In this presetation we will elaborate upon some of the most important computational and mathematical features of networks of spiking neurons.
+
+.image images/neurons.jpg 204 480
+
+_References:_
+[[https://www.sciencedirect.com/science/article/pii/S0022000004000406][On the computational power of circuits of spiking neurons]] - Maass & Markram, 2004
+[[https://www.sciencedirect.com/science/article/pii/S0304397502000993][Spiking neurons and the induction of finite states machines]] - Natschläger & Maass, 2002
+
+
+
+* Part I - On the computational power of circuits of spiking neurons
+
+- Basic concepts
+
+- Recurrent circuits with fading memory define filters with fading memory
+
+- Real-time computing with analog input
+
+- Real-time computing on spike trains
+
+* Basic Concepts
+
+- Time invariant filters:
+
+.image images/time_inv.png
+
+In other words: in order to characterize a time invariant filter we just need to observe its output values at time 0, while it input varies over all functions. Hence one can replace
+in the mathematical analysis such filter by a functional (a simpler mathematical object that maps input functions on real values rather than on functions of time).
+
+* Basic Concepts
+
+- The fading memory property:
+
+.image images/fadingm.png
+
+Informally, a filter F has fading memory if the most significant bits of its current output value (Fu)(0) depend just on the most significant bit of bits of its input function u(.) in some finite time interval [-T, 0] going back into the past.
