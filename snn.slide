@@ -9,10 +9,10 @@ Mathematical and computational aspects of SNNs
 : EOF
 SNN Group @ CIn-UFPE
 15:00 14 Apr 2021
-Tags: snn, ai
+Tags: snn, AI
 
 Gabriel G. Carvalho
-Ph.D Student - CIn - UFPE
+Ph.D Student at CIn - UFPE
 ggc5@cin.ufpe.br
 https://ggcarvalho.dev
 
@@ -20,11 +20,11 @@ https://ggcarvalho.dev
 
 In this presetation we will elaborate upon some of the most important computational and mathematical features of networks of spiking neurons.
 
-.image images/neurons.jpg 204 480
-
-_References:_
-[[https://www.sciencedirect.com/science/article/pii/S0022000004000406][On the computational power of circuits of spiking neurons]] - Maass & Markram, 2004
-[[https://www.sciencedirect.com/science/article/pii/S0304397502000993][Spiking neurons and the induction of finite states machines]] - Natschläger & Maass, 2002
+.image images/ramonycajal.jpg 204 480
+.caption Ramon y Cajal drawing
+_References_:
+[[https://www.sciencedirect.com/science/article/pii/S0022000004000406][On the computational power of circuits of spiking neurons]] - Maass & Markram
+[[https://www.sciencedirect.com/science/article/pii/S0304397502000993][Spiking neurons and the induction of finite states machines]] - Natschläger & Maass
 
 
 
@@ -36,11 +36,9 @@ _References:_
 
 - Real-time computing with analog input
 
-- Real-time computing on spike trains
-
 * Basic Concepts
 
-- Time invariant filters:
+Time invariant filters:
 
 .image images/time_inv.png
 
@@ -49,8 +47,22 @@ in the mathematical analysis such filter by a functional (a simpler mathematical
 
 * Basic Concepts
 
-- The fading memory property:
+The fading memory property:
 
 .image images/fadingm.png
 
 Informally, a filter F has fading memory if the most significant bits of its current output value (Fu)(0) depend just on the most significant bit of bits of its input function u(.) in some finite time interval [-T, 0] going back into the past.
+
+* Basic Concepts
+
+The pointwise separation property:
+
+* Basic Concepts
+
+The approximation property:
+
+* Recurrent circuits with fading memory define filters with fading memory
+
+* Real-time computing with analog input
+
+* Real-time computing on spike trains
