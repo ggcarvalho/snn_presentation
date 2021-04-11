@@ -74,7 +74,7 @@ This is a condition on the class *F* of readout functions.
 
 We will show that the pointwise separation property of *B* and and the approximation property of *F* together guarantee universal computational power for the corresponding class o LSMs, i.e., the power to approximate ant time-invariant fading memory filter on continuous functions of time with any desired precision.
 
-.image images/lsm.png 300 550
+.image images/model.png 300 550
 .caption Computational model
 
 * Recurrent circuits with fading memory define filters with fading memory
