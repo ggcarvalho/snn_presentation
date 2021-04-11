@@ -12,7 +12,7 @@ SNN Group @ CIn-UFPE
 Tags: snn, AI
 
 Gabriel G. Carvalho
-Ph.D Student at CIn - UFPE
+Ph.D Student, CIn - UFPE
 https://ggcarvalho.dev
 
 * Goal
@@ -20,7 +20,7 @@ https://ggcarvalho.dev
 In this presetation we will elaborate upon some of the most important computational and mathematical features of networks of spiking neurons.
 
 .image images/ramonycajal.jpg 204 480
-.caption Ramon y Cajal drawing
+.caption Santiago Ramon y Cajal drawing
 _References_:
 [[https://www.sciencedirect.com/science/article/pii/S0022000004000406][On the computational power of circuits of spiking neurons]] - Maass & Markram
 [[https://www.sciencedirect.com/science/article/pii/S0304397502000993][Spiking neurons and the induction of finite states machines]] - Natschläger & Maass
@@ -52,16 +52,35 @@ The fading memory property:
 
 Informally, a filter F has fading memory if the most significant bits of its current output value (Fu)(0) depend just on the most significant bit of bits of its input function u(.) in some finite time interval [-T, 0] going back into the past.
 
+It was shown in [[https://ieeexplore.ieee.org/document/6790926][Mass and Sontag]] that recurrent analog neural networks automatically acquire a fading memory quality as soon as any realistic type of noise is assumed fot their analog procesisng units.
+
 * Basic Concepts
 
 The pointwise separation property:
 
+.image images/separation.png
+
+This is a condition on the class of basis filters *B*.
+
 * Basic Concepts
 
-The approximation property:
+The universal approximation property:
+
+.image images/approximation.png
+
+This is a condition on the class *F* of readout functions.
+
+* Main result...to be shown
+
+We will show that the pointwise separation property of *B* and and the approximation property of *F* together guarantee universal computational power for the corresponding class o LSMs, i.e., the power to approximate ant time-invariant fading memory filter on continuous functions of time with any desired precision.
+
+.image images/lsm.png 300 550
+.caption Computational model
 
 * Recurrent circuits with fading memory define filters with fading memory
 
 * Real-time computing with analog input
 
 * Real-time computing on spike trains
+
+_Work_ _in_ _progress_ _..._
