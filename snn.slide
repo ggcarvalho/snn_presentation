@@ -1,12 +1,4 @@
 On the mathematical and computational aspects of SNNs
-: This talk is heavily based on Rob Pike's Go at Google: Language Design in the Service of Software Engineering 2012 article
-: https://talks.golang.org/2012/splash.article
-: Name of the talk ispired by https://www.youtube.com/watch?v=mur2aRsRxZ0
-: MUST READ UNTIL EOF
-: SHOULD: System Preferences → General → Show scroll bars: Always
-: SHOULD: Maximize notes window size
-: SHOULD: Check if notes are small enough to be read without scrolling
-: EOF
 SNN Group @ CIn-UFPE
 15:00 14 Apr 2021
 Tags: snn, AI
@@ -52,7 +44,7 @@ The fading memory property:
 
 Informally, a filter F has fading memory if the most significant bits of its current output value (Fu)(0) depend just on the most significant bit of bits of its input function u(.) in some finite time interval [-T, 0] going back into the past.
 
-It was shown in [[https://ieeexplore.ieee.org/document/6790926][Mass and Sontag]] that recurrent analog neural networks automatically acquire a fading memory quality as soon as any realistic type of noise is assumed fot their analog procesisng units.
+It was shown in [[https://ieeexplore.ieee.org/document/6790926][Maass and Sontag]] that recurrent analog neural networks automatically acquire a fading memory quality as soon as any realistic type of noise is assumed fot their analog procesisng units.
 
 * Basic Concepts
 
