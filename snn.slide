@@ -62,6 +62,10 @@ The pointwise separation property:
 
 This is a condition on the class of basis filters *B*.
 
+.image images/ex1.png
+
+A biologically interesting class of filters that satisfies the formal requirements of the pointwise separation property is the class of filters defined by standard models for dynamic synapses (see [[https://direct.mit.edu/neco/article/12/8/1743/6400/Neural-Systems-as-Nonlinear-Filters][Maass and Sontag]]).
+
 * Basic Concepts
 
 The universal approximation property:
