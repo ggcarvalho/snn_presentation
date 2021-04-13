@@ -97,7 +97,7 @@ We will show that the pointwise separation property of *B* and and the approxima
 
 .image images/limit2.png
 
-In fact, we have shown that the convergence (Fu)(t) is uniform in u, which is needed to the second part of the proof.
+In fact, we have shown that the convergence (Fu)(t) is uniform in u, which is needed to the second part of the proof, showing that the filter has fading memory.
 
 * Real-time computing with analog input
 
