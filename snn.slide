@@ -1,4 +1,4 @@
-On the mathematical and computational aspects of SNNs
+On the mathematical and computational aspects of Spiking Neural Networks
 SNN Group @ CIn-UFPE
 15:00 14 Apr 2021
 Tags: snn, AI
@@ -17,8 +17,6 @@ _Main_ _References_:
 [[https://www.sciencedirect.com/science/article/pii/S0022000004000406][On the computational power of circuits of spiking neurons]] - Maass & Markram
 [[https://www.sciencedirect.com/science/article/pii/S0304397502000993][Spiking neurons and the induction of finite states machines]] - Natschläger & Maass
 
-
-
 * Part I - On the computational power of circuits of spiking neurons
 
 - Basic concepts
@@ -26,6 +24,8 @@ _Main_ _References_:
 - Recurrent circuits with fading memory define filters with fading memory
 
 - Real-time computing with analog input
+
+- Real-time computing on spike trains
 
 * Basic Concepts
 
@@ -81,6 +81,24 @@ We will show that the pointwise separation property of *B* and and the approxima
 
 * Recurrent circuits with fading memory define filters with fading memory
 
+.image images/circuits.png
+
+* Recurrent circuits with fading memory define filters with fading memory
+
+.image images/state.png
+
+.image images/theo2.png
+
+* Recurrent circuits with fading memory define filters with fading memory
+
+.image images/limit1.png
+
+* Recurrent circuits with fading memory define filters with fading memory
+
+.image images/limit2.png
+
+In fact, we have shown that the convergence (Fu)(t) is uniform in u, which is needed to the second part of the proof.
+
 * Real-time computing with analog input
 
 We will prove the following
@@ -97,4 +115,6 @@ for some arbitrary constants K, K` > 0.
 
 * Real-time computing on spike trains
 
-    Work in progress...
+Much harder case..
+
+.image images/wip.jpeg 450 450
