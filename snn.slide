@@ -7,13 +7,12 @@ Gabriel G. Carvalho
 Ph.D Student, CIn - UFPE
 https://ggcarvalho.dev
 
-
 * Goal
-.html html/latex.html
+
 In this presetation we will elaborate upon some of the most important computational and mathematical features of networks of spiking neurons.
 
 .image images/ramonycajal.jpg 204 480
-.caption Santiago Ramon y Cajal drawings
+.caption Santiago Ramon y Cajal drawing
 _Main_ _References_:
 [[https://www.sciencedirect.com/science/article/pii/S0022000004000406][On the computational power of circuits of spiking neurons]] - Maass & Markram
 [[https://www.sciencedirect.com/science/article/pii/S0304397502000993][Spiking neurons and the induction of finite states machines]] - Natschläger & Maass
@@ -32,33 +31,24 @@ _Main_ _References_:
 
 Time invariant filters:
 
-A filter $F$ is said to be $\textit{time-invariant}$ if any temporal shift of the input function $u(\cdot)$ by some amount $t_0$ causes a temporal shift of the output function by the same
-amount, i.e., $(Fu^{t_0})(t) = (Fu)(t + t_0)$ for all $t, t_0 \in \mathbb{R}$, where $u^{t_0}(t) \equiv u(t + t_0).$
+.image images/time_inv.png
 
-*Claim*: If the domain $U$ of input functions is closed under temporal shifts, then a time-invariant filter $F: U^{n} \rightarrow \mathbb{R}^{\mathbb{R}}$ is identified uniquely by the values $y(0) = (Fu)(0)$ of its output functions $y(\cdot)$ at time $0$.
-
-In other words: in order to characterize a time invariant filter we just need to observe its output values at time $0$, while it input varies over all functions. Hence one can replace
+In other words: in order to characterize a time invariant filter we just need to observe its output values at time 0, while it input varies over all functions. Hence one can replace
 in the mathematical analysis such filter by a functional (a simpler mathematical object that maps input functions on real values rather than on functions of time).
 
 * Basic Concepts
 
 The claim is true in the following sense:
 
-If set $U$ is closed under temporal shifts, then for all $u(t) \in U^n$ and for all $t_0 \in \mathbb{R}$ we have $u^{t_0}(t) \equiv (u_1^{t0}(t), \ldots, u_n^{t0}(t)) \in U^n$.
-Let $F: U^n \rightarrow \mathbb{R}^{\mathbb{R}}$ be a time-invariant filter. Then, $F$ can be regarded as a functional $F: U^n \rightarrow \mathbb{R}$ defined by
-\begin{eqnarray*}
-F: U^n &\rightarrow& \mathbb{R}\\
-u(t) &\mapsto& (Fu)(0).
-\end{eqnarray*}
-Since $F$ is time-invariant, for any given $\tau\in \mathbb{R}$, $(Fu)(\tau) = (Fu^{\tau})(0)$. Since $U$ is closed under temporal shifts, $u^{\tau} \in U^n$. Therefore, one just need to know the values of $F$ applied to input functions at time $t=0$.
+.image images/claim_proof.png
 
 * Basic Concepts
 
 The fading memory property:
 
-A filter $F: U^{n} \rightarrow \mathbb{R}^{\mathbb{R}}$ is said to have fading memory if for every $u \in U^{n}$ and every $\varepsilon > 0$, there exist $\delta > 0$ and $T > 0$ such that $|(Fv)(0) - (Fu)(0)| < \varepsilon$ for all $v \in U^{n}$ with $\lVert u(t) - v(t) \rVert < \delta$ for all $t \in [-T, 0]$.
+.image images/fadingm.png
 
-Informally, a filter $F$ has fading memory if the most significant bits of its current output value $(Fu)(0)$ depend just on the most significant bit of bits of its input function $u(\cdot)$ in some finite time interval $[-T, 0]$ going back into the past.
+Informally, a filter F has fading memory if the most significant bits of its current output value (Fu)(0) depend just on the most significant bit of bits of its input function u(.) in some finite time interval [-T, 0] going back into the past.
 
 It was shown in [[https://ieeexplore.ieee.org/document/6790926][Maass and Sontag]] that recurrent analog neural networks automatically acquire a fading memory quality as soon as any realistic type of noise is assumed fot their analog procesisng units.
 
@@ -66,11 +56,11 @@ It was shown in [[https://ieeexplore.ieee.org/document/6790926][Maass and Sontag
 
 The pointwise separation property:
 
-For any two input functions $u(\cdot), v(\cdot) \in u^{n}$ with $u(s) \neq v(s)$ for some $s \leq 0$ there exists some filter $B \in \mathcal{B}$ that separates $u(\cdot)$ and $v(\cdot)$, i.e., $(Bu)(0) \neq (Bv)(0)$.
+.image images/separation.png
 
-This is a condition on the class of basis filters $\mathcal{B}$.
+This is a condition on the class of basis filters *B*.
 
-*Examples*: The class of all delay filters $u(\cdot)\mapsto u^{t_0}(\cdot)$, the class of linear filters with impulse responses of the form $h(t) = \exp(-at), a >0$.
+.image images/ex1.png
 
 A biologically interesting class of filters that satisfies the formal requirements of the pointwise separation property is the class of filters defined by standard models for dynamic synapses (see [[https://direct.mit.edu/neco/article/12/8/1743/6400/Neural-Systems-as-Nonlinear-Filters][Maass and Sontag]]).
 
@@ -78,14 +68,13 @@ A biologically interesting class of filters that satisfies the formal requiremen
 
 The universal approximation property:
 
-For any $m\in \mathbb{N}$, any compact $X \subseteq \mathbb{R}^m$, any continuous function $h: X \rightarrow \mathbb{R}$, and any given $\rho > 0$, there exists some $f$ in $F$ so that $| h(x) - f(x) | \leq \rho$ for all $x \in X$.
+.image images/approximation.png
 
-
-This is a condition on the class $F$ of readout functions.
+This is a condition on the class *F* of readout functions.
 
 * Main result...to be shown
 
-We will show that the pointwise separation property of $\mathcal{B}$ and and the approximation property of $F$ together guarantee universal computational power for the corresponding class o LSMs, i.e., the power to approximate ant time-invariant fading memory filter on continuous functions of time with any desired precision.
+We will show that the pointwise separation property of *B* and and the approximation property of *F* together guarantee universal computational power for the corresponding class o LSMs, i.e., the power to approximate ant time-invariant fading memory filter on continuous functions of time with any desired precision.
 
 .image images/lsm.png 300 500
 .caption Computational model of a LSM
@@ -96,20 +85,15 @@ We will show that the pointwise separation property of $\mathcal{B}$ and and the
 
 We will prove the following
 
-*Theorem*: Assume that $\mathcal{B}$ is an arbitrary class of time-invariant fading memory filters that has the pointwise separation property. Furthermore, assume that $F$ is an arbitrary class of functions that has the approximation property.
-
-Then, any given time-invariant fading memory filter $\mathcal{F}$ can be approximated arbitrarily closely by LSMs $M$ with liquid filter $L^M$ composed from basis filters in $B$ and readout maps $f^M$ chosen from $\mathcal{F}$. Formally, for every $\varepsilon > 0$ there exists $m \in \mathbb{N}$, $B_1,\ldots,B_m \in B$, and $f^M \in \mathcal{F}$ so that the LSM $\langle L^M, f^M \rangle$, with $L^M$ composed of $B_i$ satisfies $|(F\underline{u})(t) -(M\underline{u})(t)| < \varepsilon$ for all $u \in U^n$ and $t \in \mathbb{R}$.
+.image images/theo3-1.png
 
 * Real-time computing with analog input
 
 Notes:
 
-\begin{eqnarray*}
-U &=& \{ u: \mathbb{R}\rightarrow [-K, K] : |u(s) - u(t)| \leq K^{\prime}|s - t|, \text{for all } s,t \in \mathbb{R} \}\\
-\underline{u} &=& (u_1, \ldots, u_n) \in U^n
-\end{eqnarray*}
+.image images/cond3-1.png
 
-for some arbitrary constants $K, K^{\prime} > 0$.
+for some arbitrary constants K, K` > 0.
 
 * Real-time computing on spike trains
 
