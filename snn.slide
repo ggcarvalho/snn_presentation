@@ -63,7 +63,7 @@ The fading memory property
 
 The pointwise separation property:
 
-.image images/separation.png
+.image images/separation_prop.png
 
 This is a condition on the class of basis filters *B*.
 
