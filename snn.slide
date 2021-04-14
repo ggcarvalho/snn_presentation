@@ -108,6 +108,14 @@ In fact, we have shown that the convergence (Fu)(t) is uniform in u, which is ne
 
 * Recurrent circuits with fading memory define filters with fading memory
 
+.image images/fadingtheo.png
+
+* Recurrent circuits with fading memory define filters with fading memory
+
+.image images/fadingtheo2.png
+
+* Recurrent circuits with fading memory define filters with fading memory
+
 .image images/remark.png
 
 * Real-time computing with analog input
