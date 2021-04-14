@@ -54,6 +54,13 @@ It was shown in [[https://ieeexplore.ieee.org/document/6790926][Maass and Sontag
 
 * Basic Concepts
 
+The fading memory property
+
+.image images/fm-image.png 400 600
+.caption Depicting the fading memory property
+
+* Basic Concepts
+
 The pointwise separation property:
 
 .image images/separation.png
