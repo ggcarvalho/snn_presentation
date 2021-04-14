@@ -50,7 +50,7 @@ The fading memory property:
 
 Informally, a filter F has fading memory if the most significant bits of its current output value (Fu)(0) depend just on the most significant bit of bits of its input function u(.) in some finite time interval [-T, 0] going back into the past.
 
-It was shown in [[https://ieeexplore.ieee.org/document/6790926][Maass and Sontag]] that recurrent analog neural networks automatically acquire a fading memory quality as soon as any realistic type of noise is assumed fot their analog procesisng units.
+It was shown in [[https://ieeexplore.ieee.org/document/6790926][Maass and Sontag]] that recurrent analog neural networks automatically acquire a fading memory quality as soon as any realistic type of noise is assumed for their analog processing units.
 
 * Basic Concepts
 
