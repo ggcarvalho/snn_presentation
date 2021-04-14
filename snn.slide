@@ -125,3 +125,9 @@ for some arbitrary constants K, K` > 0.
 Much harder case..
 
 .image images/wip.jpeg 450 450
+
+* General Comments
+
+- The universal computational power of LSMs is with regard to all time-invariante fading memory computations on continuous functions of time: Any time-invariant fading memory filter F can be approximated by an LSM under mild conditions on the basis filters and readout maps.
+
+- The recurrent character of the network *is* *not* used directly. It is an _ansatz_ to ensure some of the desired properties.
