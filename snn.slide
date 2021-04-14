@@ -106,9 +106,13 @@ We will show that the pointwise separation property of *B* and and the approxima
 
 In fact, we have shown that the convergence (Fu)(t) is uniform in u, which is needed to the second part of the proof, showing that the filter has fading memory.
 
+* Recurrent circuits with fading memory define filters with fading memory
+
+.image images/remark.png
+
 * Real-time computing with analog input
 
-We will prove the following
+Next time, will prove the following
 
 .image images/theo3-1.png
 
