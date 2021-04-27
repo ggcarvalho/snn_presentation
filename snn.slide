@@ -1,6 +1,6 @@
 On the mathematical and computational aspects of Spiking Neural Networks
 SNN Group @ CIn-UFPE
-15:00 14 Apr 2021
+15:00 28 Apr 2021
 Tags: snn, AI
 
 Gabriel G. Carvalho
@@ -131,6 +131,28 @@ Notes:
 .image images/cond3-1.png
 
 for some arbitrary constants K, K` > 0.
+
+We will also need the following
+
+.image images/lemma3-3.png
+
+* Real-time computing with analog input
+
+.image images/lemma3-3proof.png 500 850
+
+* Real-time computing with analog input
+
+.image images/arzela.png 250 850
+
+.image images/uminusdef.png
+
+* Real-time computing with analog input
+
+.image images/proofsketch.png
+
+* Real-time computing with analog input
+
+.image images/stone-weierstrass.png 300 1000
 
 * Real-time computing on spike trains
 
